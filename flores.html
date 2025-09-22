@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🌻 Regalito para Ti 🌻💙</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fff9e6, #ffe066);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 3em;
+      color: #d4a017;
+      text-shadow: 2px 2px #fff;
+    }
+
+    p {
+      font-size: 1.3em;
+      color: #444;
+    }
+
+    /* Estilo de flores */
+    .flor {
+      position: absolute;
+      font-size: 40px;
+      animation: caer 10s linear infinite;
+    }
+
+    @keyframes caer {
+      0% { transform: translateY(-100px) rotate(0deg); }
+      100% { transform: translateY(100vh) rotate(360deg); }
+    }
+
+    /* Fotos */
+    .galeria {
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 250px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>🌻 Flores amarillas para ti 🌻</h1>
+  <p>Un detalle lleno de cariño y alegría 💛</p>
+
+  <!-- Fotos -->
+  <div class="galeria">
+    <img src="foto1.jpg" alt="Foto 1">
+    <img src="foto2.jpg" alt="Foto 2">
+    <img src="foto3.jpg" alt="Foto 3">
+  </div>
+
+  <!-- Flores animadas -->
+  <div class="flor" style="left: 10%;">🌼</div>
+  <div class="flor" style="left: 30%; animation-delay: 2s;">🌼</div>
+  <div class="flor" style="left: 50%; animation-delay: 4s;">🌼</div>
+  <div class="flor" style="left: 70%; animation-delay: 6s;">🌼</div>
+  <div class="flor" style="left: 90%; animation-delay: 8s;">🌼</div>
+</body>
+</html>
