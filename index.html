@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🌻 Flores para Ti 💙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="fade-in">🌻 Flores para ti 💙</h1>
+
+  <!-- Contador -->
+  <div id="contador" class="contador"></div>
+
+  <!-- Frases aleatorias -->
+  <div id="frase" class="frase"></div>
+
+  <!-- Carrusel -->
+  <div class="carrusel">
+    <div class="slides">
+      <img src="1.jpeg" alt="Foto 1">
+      <img src="2.jpeg" alt="Foto 2">
+      <img src="3.jpeg" alt="Foto 3">
+      <img src="4.jpeg" alt="Foto 4">
+      <img src="5.jpeg" alt="Foto 5">
+      <img src="6.jpeg" alt="Foto 6">
+      <img src="7.jpeg" alt="Foto 7">
+      <img src="8.jpeg" alt="Foto 8">
+      <!-- duplicadas para ciclo infinito -->
+      <img src="1.jpeg" alt="Foto 1">
+      <img src="2.jpeg" alt="Foto 2">
+      <img src="3.jpeg" alt="Foto 3">
+      <img src="4.jpeg" alt="Foto 4">
+      <img src="5.jpeg" alt="Foto 5">
+      <img src="6.jpeg" alt="Foto 6">
+      <img src="7.jpeg" alt="Foto 7">
+      <img src="8.jpeg" alt="Foto 8">
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="cerrar">&times;</span>
+    <img class="lightbox-contenido" id="imagen-ampliada">
+  </div>
+
+  <!-- Botones -->
+  <button id="musica-btn">🎶 Música</button>
+  <button id="arriba-btn">⬆️</button>
+
+  <!-- Audio -->
+  <audio id="musica" loop>
+    <source src="Turning Page.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Contenedor de flores animadas -->
+  <div id="flores"></div>
+
+  <!-- Confeti -->
+  <canvas id="confeti"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
